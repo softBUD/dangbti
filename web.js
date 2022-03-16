@@ -1,22 +1,23 @@
 const express = require('express')
-const path = require('/home/hosting_users/db1magic/apps/db1magic_dangbti');
+//const path = require('/home/hosting_users/db1magic/apps/db1magic_dangbti');
 const app = express()
 const PORT = 8001
+const path = require('path')
 
 app.set('views', __dirname + '/views');
 app.use(express.urlencoded({ extended: true}))
 app.set('view engine', 'ejs')
 app.use(express.json());
-app.use(express.static(path.join(__dirname,"/views")));
+app.use(express.static(path.join(__dirname,"views")));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/index.ejs"));
+    res.render("index")
 });
 app.get("/question", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/component/question.ejs"));
+    res.render(path.join(__dirname, "views/component/question"));
 });
 app.get("/result/[1-5]", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/component/result.ejs"));
+    res.render(path.join(__dirname, "views/component/result"));
 });
 //"/"를 요청시에 index.html을 가져온다.
 
