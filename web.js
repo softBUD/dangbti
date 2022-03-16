@@ -6,23 +6,18 @@ const PORT = 8001
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs')
 app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname,"/views")));
 
-app.get('/', (req, res) => {
-  res.render('index')
-})
-app.listen(PORT, () => {
-    console.log(`server started on PORT ${PORT}`)
-})
-
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "views/index.html"));
+});
 app.get("/question", (req, res) => {
-    res.render("component/question");
+    res.sendFile(path.join(__dirname, "views/component/question.html"));
 });
 app.get("/result/[1-5]", (req, res) => {
-    res.render("component/result");
+    res.sendFile(path.join(__dirname, "views/component/result.html"));
 });
-
+//"/"를 요청시에 index.html을 가져온다.
 
 app.post("/submit", (req, res) => {
     const data = req.body;
@@ -51,4 +46,7 @@ app.post("/submit", (req, res) => {
     }
     
     res.redirect("/result/" + (maxValueIdx + 1));
+})
+app.listen(PORT, () => {
+    console.log(`server started on PORT ${PORT}`)
 })
