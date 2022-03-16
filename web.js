@@ -10,13 +10,13 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname,"/views")));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/component/index.ejs"));
+    res.sendFile(path.join(__dirname, "views/index.ejs"));
 });
 app.get("/question", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/component/question.html"));
+    res.sendFile(path.join(__dirname, "views/component/question.ejs"));
 });
 app.get("/result/[1-5]", (req, res) => {
-    res.sendFile(path.join(__dirname, "views/component/result.html"));
+    res.sendFile(path.join(__dirname, "views/component/result.ejs"));
 });
 //"/"를 요청시에 index.html을 가져온다.
 
