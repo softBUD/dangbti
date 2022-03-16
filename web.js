@@ -1,16 +1,15 @@
 const express = require('express')
-const path = require('/home/hosting_users/db1magic/apps/db1magic_dangbti');
 const app = express()
 const PORT = 8001
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs')
-app.use(express.json());
-app.use(express.static(path.join(__dirname,"/views")));
 
-app.get("/", (req, res) => {
-    res.render(index);
-});
+app.get('/', (req, res) => {
+  res.render('index')
+})
+app.listen(PORT, () => {
+    console.log(`server started on PORT ${PORT}`)
+})
 app.get("/question", (req, res) => {
     res.sendFile(path.join(__dirname, "views/component/question.html"));
 });
@@ -46,7 +45,4 @@ app.post("/submit", (req, res) => {
     }
     
     res.redirect("/result/" + (maxValueIdx + 1));
-})
-app.listen(PORT, () => {
-    console.log(`server started on PORT ${PORT}`)
 })
