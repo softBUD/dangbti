@@ -1,0 +1,346 @@
+{
+    "questions": [
+        {
+            "pk": 1,
+            "content": "대학교에서 팀플과제를 하게되었다. 첫 회의에서 당신이 할 말은?"
+        },
+        {
+            "pk": 2,
+            "content": "오늘 하루를 자유롭게 하고싶은 일을 하면서 보낸다면, 당신은?"
+        },
+        {
+            "pk": 3,
+            "content": "당신이 살고싶은 곳은?"
+        },
+        {
+            "pk": 4,
+            "content": "당신의 평소 청소습관은?"
+        },
+        {
+            "pk": 5,
+            "content": "당신은 이사를 계획하고 있다. 새로운 가구를 산다면, 당신은?"
+        },
+        {
+            "pk": 6,
+            "content": "당신이 강아지를 기른다면 어떤 스타일이 좋을까?"
+        },
+        {
+            "pk": 7,
+            "content": "당신은 옷을 선물 받았다. 받았을 때 가장 기쁜 선물은?"
+        },
+        {
+            "pk": 8,
+            "content": "당신의 평소 sns 활용법은?"
+        },
+        {
+            "pk": 9,
+            "content": "당신은 바다에 놀러왔습니다. 성공적인 여행을 위해 가장 먼저 해야할 것은?"
+        },
+        {
+            "pk": 10,
+            "content": "당신이 주로 음악을 듣는 방식은?"
+        }
+    ],
+    "answers": [
+        {
+            "pk": 1,
+            "content": "발표는 제가 할게요!",
+            "breed": 1,
+            "question": 1
+        },
+        {
+            "pk": 2,
+            "content": "저는 남는 파트 할게요.",
+            "breed": 4,
+            "question": 1
+        },
+        {
+            "pk": 3,
+            "content": "대충 정하고 나머진 톡으로 얘기하죠.",
+            "breed": 5,
+            "question": 1
+        },
+        {
+            "pk": 4,
+            "content": "저는 자료조사를 맡고싶어요.",
+            "breed": 2,
+            "question": 1
+        },
+        {
+            "pk": 5,
+            "content": "회의 끝나고 다같이 밥먹으러 가요~",
+            "breed": 3,
+            "question": 1
+        },
+        {
+            "pk": 6,
+            "content": "여러 사람들과 만날 수 있는 새로운 모임에 참석한다.",
+            "breed": 3,
+            "question": 2
+        },
+        {
+            "pk": 7,
+            "content": "발 닿는 대로, 자유롭게 돌아다니는 여행을 떠난다.",
+            "breed": 2,
+            "question": 2
+        },
+        {
+            "pk": 8,
+            "content": "혼자서 평소 가보고 싶었던 카페에 방문한다.",
+            "breed": 5,
+            "question": 2
+        },
+        {
+            "pk": 9,
+            "content": "바빠서 못했던 운동을 하러 간다.",
+            "breed": 1,
+            "question": 2
+        },
+        {
+            "pk": 10,
+            "content": "집에서 편하게 쉰다.",
+            "breed": 4,
+            "question": 2
+        },
+        {
+            "pk": 11,
+            "content": "번화한 도심속의 아파트나 오피스텔",
+            "breed": 1,
+            "question": 3
+        },
+        {
+            "pk": 12,
+            "content": "주변에 큰 공원이 있는 주택",
+            "breed": 3,
+            "question": 3
+        },
+        {
+            "pk": 13,
+            "content": "적당히 시끄럽고 적당히 조용한 신도시의 아파트",
+            "breed": 2,
+            "question": 3
+        },
+        {
+            "pk": 14,
+            "content": "근처에 아는 사람들이 많이 사는 고향집",
+            "breed": 4,
+            "question": 3
+        },
+        {
+            "pk": 15,
+            "content": "사람마주칠 일 없는 교외의 단독주택",
+            "breed": 5,
+            "question": 3
+        },
+        {
+            "pk": 16,
+            "content": "주로 그때그때 하고싶을 때만 한다.",
+            "breed": 2,
+            "question": 4
+        },
+        {
+            "pk": 17,
+            "content": "항상 깔끔한게 좋다. 매일매일 청소한다.",
+            "breed": 1,
+            "question": 4
+        },
+        {
+            "pk": 18,
+            "content": "어지르다가도 많이 더러워졌다 싶으면 청소함.",
+            "breed": 4,
+            "question": 4
+        },
+        {
+            "pk": 19,
+            "content": "매일은 아니지만 자주 청소하는 편.",
+            "breed": 3,
+            "question": 4
+        },
+        {
+            "pk": 20,
+            "content": "나만의 청소하는 날짜나 규칙이 있다.",
+            "breed": 5,
+            "question": 4
+        },
+        {
+            "pk": 21,
+            "content": "직접 가구샵을 방문해 무조건 내 마음에 드는 걸로 고른다.",
+            "breed": 1,
+            "question": 5
+        },
+        {
+            "pk": 22,
+            "content": "tv 채널을 돌려보다가 홈쇼핑에서 본 것을 산다.",
+            "breed": 2,
+            "question": 5
+        },
+        {
+            "pk": 23,
+            "content": "친구와 함께 가구전문점을 둘러보면서 같이 고른 것을 산다.",
+            "breed": 3,
+            "question": 5
+        },
+        {
+            "pk": 24,
+            "content": "새거보단 최대한 쓰던 가구를 계속 쓴다.",
+            "breed": 4,
+            "question": 5
+        },
+        {
+            "pk": 25,
+            "content": "내가 좋아하는 브랜드의 제품을 산다.",
+            "breed": 5,
+            "question": 5
+        },
+        {
+            "pk": 26,
+            "content": "활발하고 사람을 좋아하는 스타일",
+            "breed": 3,
+            "question": 6
+        },
+        {
+            "pk": 27,
+            "content": "충성심 강하고 겁이없는 스타일",
+            "breed": 1,
+            "question": 6
+        },
+        {
+            "pk": 28,
+            "content": "까칠하지만 귀엽고 혼자서도 잘 노는 스타일",
+            "breed": 5,
+            "question": 6
+        },
+        {
+            "pk": 29,
+            "content": "잘 뛰어놀고 호기심 많은 스타일",
+            "breed": 2,
+            "question": 6
+        },
+        {
+            "pk": 30,
+            "content": "감정을 공유하고 서로 유대하는 스타일",
+            "breed": 4,
+            "question": 6
+        },
+        {
+            "pk": 31,
+            "content": "요즘 유행한다는 디자인의 바지.",
+            "breed": 2,
+            "question": 7
+        },
+        {
+            "pk": 32,
+            "content": "나에게 잘 어울릴법한 색상의 셔츠",
+            "breed": 1,
+            "question": 7
+        },
+        {
+            "pk": 33,
+            "content": "일단 선물받은 것만으로도 기쁠것 같다.",
+            "breed": 3,
+            "question": 7
+        },
+        {
+            "pk": 34,
+            "content": "친구랑 직접 가서 함께 고른 티셔츠.",
+            "breed": 4,
+            "question": 7
+        },
+        {
+            "pk": 35,
+            "content": "마침 필요했던 실용적인 패딩/여름옷",
+            "breed": 5,
+            "question": 7
+        },
+        {
+            "pk": 36,
+            "content": "자주 올리진 않지만 가끔 기분내킬 때 무언가 찍어 올린다.",
+            "breed": 2,
+            "question": 8
+        },
+        {
+            "pk": 37,
+            "content": "내 모습을 자주 남기는걸 좋아한다. 거의 매일같이 무언가를 올린다.",
+            "breed": 1,
+            "question": 8
+        },
+        {
+            "pk": 38,
+            "content": "친구들을 자주 태그하고 DM 보내는데 활용한다.",
+            "breed": 3,
+            "question": 8
+        },
+        {
+            "pk": 39,
+            "content": "내가 좋아하는 특별한 분위기의 사진들을 올린다.",
+            "breed": 5,
+            "question": 8
+        },
+        {
+            "pk": 40,
+            "content": "sns를 자주 안하거나, 눈팅만 즐긴다.",
+            "breed": 4,
+            "question": 8
+        },
+        {
+            "pk": 41,
+            "content": "일단 파라솔이랑 음식 세팅! 사진 잘 찍어서 SNS에 여행 온 거 자랑해야지!",
+            "breed": 1,
+            "question": 9
+        },
+        {
+            "pk": 42,
+            "content": "여행 왔는데 짐을 잃어버리면 낭패지! 락커룸이 어디 있는지 찾아보자!",
+            "breed": 5,
+            "question": 9
+        },
+        {
+            "pk": 43,
+            "content": "준비물은 다 챙겨왔지? 빠뜨린 거 없는지 다시 확인하자!",
+            "breed": 4,
+            "question": 9
+        },
+        {
+            "pk": 44,
+            "content": "이왕 온 거 유명한 건 다 해 봐야지! 근처에 어떤 맛집이 있는지 알아보자!",
+            "breed": 2,
+            "question": 9
+        },
+        {
+            "pk": 45,
+            "content": "그냥 노는 건 재미없잖아? 비치볼 게임 하면서 놀자!",
+            "breed": 3,
+            "question": 9
+        },
+        {
+            "pk": 46,
+            "content": "유튜브에서 여러가지 감성적인 플레이리스트를 듣는다",
+            "breed": 2,
+            "question": 10
+        },
+        {
+            "pk": 47,
+            "content": "흥나는 edm이나 팝송을 주로 듣는다.",
+            "breed": 1,
+            "question": 10
+        },
+        {
+            "pk": 48,
+            "content": "내 취향의 노래를 모아둔 재생목록이 있다.",
+            "breed": 5,
+            "question": 10
+        },
+        {
+            "pk": 49,
+            "content": "그때 그때 유행하는 최신곡 위주로 듣는다.",
+            "breed": 3,
+            "question": 10
+        },
+        {
+            "pk": 50,
+            "content": "한 노래나 특정 가수에 꽂히면 그것만 듣는다.",
+            "breed": 4,
+            "question": 10
+        }
+    ]
+}

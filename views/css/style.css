@@ -1,0 +1,291 @@
+@charset "utf-8";
+@import "reset.css";
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+body {
+  margin: 98px auto 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fff;
+  height: 100%;
+}
+
+button {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/*인트로 페이지 스타일링*/
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro-container img {
+  display: block;
+  width: 240px;
+  height: 240px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.intro-container h1 {
+  font-weight: 700;
+  font-family: "Cafe24Ssurround", sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.intro-desc {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #009dae;
+  margin-bottom: 36px;
+}
+
+.start-btn {
+  font-size: 16px;
+  font-weight: 900;
+  color: #009dae;
+  border-style: none;
+  width: 300px;
+  height: 52px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
+  border-radius: 10px;
+}
+/*문항 선택 페이지*/
+
+#question-form {
+  width: 333px;
+  margin: 0 auto;
+}
+
+.question-item {
+  display: none;
+}
+.question-item.on {
+  display: block;
+}
+
+.status-box {
+  background-color: #fff;
+  position: relative;
+}
+
+.status-number {
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 18px;
+  color: #009dae;
+}
+.status-bar {
+  height: 6px;
+  background-color: #009dae;
+}
+.question-box {
+  width: 100%;
+}
+
+.question-box h2 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 40px 0 30px;
+}
+
+.answer-list {
+  margin-bottom: 48px;
+}
+.answer-list .answer-item {
+  text-indent: -22px;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 12px 23px;
+}
+
+.question-box input,
+.question-box label {
+  cursor: pointer;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-box button {
+  box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
+  color: #fff;
+  border-style: none;
+  background-color: #009dae;
+  font-weight: 900;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.button-box.style-center {
+  justify-content: center;
+}
+
+/*로딩 스타일*/
+
+.loading-container {
+  display: block;
+  position: absolute;
+  top: 326px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.loading-container img {
+  width: 91px;
+  height: 88px;
+  margin-bottom: 24px;
+}
+.loading-text {
+  font-size: 14px;
+}
+
+/*결과페이지 스타일*/
+.result-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.result-wrap {
+  margin-bottom: 36px;
+}
+.result-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.result-name {
+  font-family: "Cafe24Ssurround", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+  color: #009dae;
+}
+.result-image {
+  transform: translateX(10%);
+}
+.result-image img {
+  width: 240px;
+  height: 240px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.result-features {
+  width: 300px;
+  border: 4px solid #d6d2c4;
+  border-radius: 7px;
+  margin-top: 8px;
+}
+
+.result-features h3 {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.result-features-desc {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.result-features-desc li {
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 12px 12px;
+  text-indent: -9px;
+}
+.result-features-desc li::before {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #009dae;
+  vertical-align: 3px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.restart-btn {
+  margin-bottom: 30px;
+  font-weight: 900;
+  width: 300px;
+  height: 52px;
+  color: #009dae;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
+  border-style: none;
+  border-radius: 7px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    margin-top: 35px;
+  }
+  .intro-container h1 {
+    font-size: 45px;
+  }
+  .intro-desc {
+    font-size: 14px;
+  }
+  .question-item {
+    margin-left: 30px;
+    width: 270px;
+  }
+  .question-box h2 {
+    font-size: 16px;
+  }
+  .answer-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .loading-container {
+    top: 266px;
+  }
+  .loading-text {
+    font-size: 12px;
+  }
+
+  .result-features-desc li {
+    font-size: 14px;
+  }
+}
