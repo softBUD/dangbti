@@ -1,0 +1,25 @@
+.radio button label {
+  position: relative;
+}
+.answer-item input[type="radio"].radio-button {
+  display: none;
+}
+
+.answer-item input[type="radio"].radio-button label::before {
+  /* 체크박스 배경 */
+  display: inline-block;
+  content: "";
+  width: 1.25em;
+  height: 1.25em;
+  border: 1px solid rgb(8, 107, 86);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin: 0 5px -6px 0;
+}
+
+.answer-item input[type="radio"].radio-button label::after {
+  position: absolute;
+  content: 🔵;
+  font-size: 1.5em;
+  transition: all 0.3s;
+}
