@@ -41,9 +41,8 @@ body {
   background-size: 100% 100%;
   background-image: url("../images/introbg.jpg");
   background-repeat: no-repeat;
-  min-height: 200vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 160vh;
+  text-align: center;
   align-items: center;
 }
 
@@ -57,40 +56,37 @@ body {
   line-height: 55px;
 }
 
-h1 {
-  position: absolute;
-  font-weight: 500;
-  font-size: 4em;
-}
-
 h1 .title-container {
   position: relative;
+  top: 0.3em;
   display: inline-block;
   padding-top: 0.2em;
   padding-right: 0.05em;
-  padding-bottom: 0.1em;
   overflow: hidden;
 }
+
 h1 .title-container .title-text {
   transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
+  color: #fc5404;
 }
 
 .intro-button {
+  margin: 0 auto;
   position: relative;
   top: 800px;
   align-items: center;
   cursor: pointer;
   display: flex;
-  background-color: #03045e;
+  background-color: #fc5404;
   border: none;
   box-shadow: none;
   border-radius: 5px;
   padding: 6px;
 }
 
-.button-img {
+.intro-button .button-image {
   background-color: transparent;
   width: 45px;
   height: 45px;
@@ -101,6 +97,27 @@ h1 .title-container .title-text {
   margin-top: 15px;
   font-weight: 600;
   font-size: 22px;
+}
+#scroll-top {
+  background-repeat: no-repeat;
+  background-image: url("../images/upload.png");
+  width: 35px;
+  height: 35px;
+  background-color: #fc5404;
+  position: fixed;
+  left: 90%;
+  top: 90%;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.scroll-image {
+  width: 75%;
+  height: 75%;
+  margin-top: 3px;
+}
+.show {
+  opacity: 0;
 }
 /*문항 선택 페이지*/
 
