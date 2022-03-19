@@ -9,16 +9,20 @@ window.onload = function () {
     scrollbtn.classList.add("show"); //scrolltop 요소 미표시
 
     window.addEventListener("scroll", function(event) {
-        let scroll = window.pageYOffset
-        introBg.style.transform = "translateY(" + scroll/3 + "px)";
-        title.style.transform = "translateY(" + scroll/1.7 + "px)";
-        if(550 <= scroll) {
-          scrollbtn.classList.remove("show"); //scrolltop 요소 표시
-          } else {
-            scrollbtn.classList.add("show");
-          }
         
-    })
+      const scroll = window.pageYOffset
+
+      this.document.querySelector(".plz-down").classList.add("show");
+      introBg.style.transform = "translateY(" + scroll/3 + "px)";
+      title.style.transform = "translateY(" + scroll/1.7 + "px)";
+
+      if(450 <= scroll) {
+        scrollbtn.classList.remove("show"); //scrolltop 요소 표시
+        } else {
+          scrollbtn.classList.add("show");
+        }
+      
+  })
 
     introbtn.addEventListener("mouseover", function(event){
       btnimage.src="../images/smiledog.png";
@@ -31,6 +35,7 @@ window.onload = function () {
     scrollbtn.addEventListener("click", function(event){
       window.scrollTo({top:0, behavior:"smooth"})
     })
+
     //텍스트 모션
 
     let titlecon = document.querySelector(".title-container");

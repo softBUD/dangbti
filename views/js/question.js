@@ -77,7 +77,7 @@ function setElement (question, answerArr) {
         tempContainer.innerHTML += `
         <li class="answer-item">
         <input type="radio" class="radio-button" id="answer-${answer.pk}" name="answer-${question.pk}" value="${answer.breed}">
-        <label for="answer-${answer.pk}">${Number(idx) + 1}. ${answer.content}</label>
+        <label for="answer-${answer.pk}" class="radio-label">${Number(idx) + 1}. ${answer.content}</label>
         </li>
         `;
     }

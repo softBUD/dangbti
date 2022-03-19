@@ -1,25 +1,27 @@
-.radio button label {
-  position: relative;
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: none;
 }
-.answer-item input[type="radio"].radio-button {
-  display: none;
-}
-
-.answer-item input[type="radio"].radio-button label::before {
-  /* 체크박스 배경 */
-  display: inline-block;
+input[type="radio"]:after {
   content: "";
-  width: 1.25em;
-  height: 1.25em;
-  border: 1px solid rgb(8, 107, 86);
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  margin: 0 5px -6px 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+  border: 2px solid #fdb51a;
+  border-radius: 100%;
+  vertical-align: middle;
+  cursor: pointer;
 }
-
-.answer-item input[type="radio"].radio-button label::after {
-  position: absolute;
-  content: 🔵;
-  font-size: 1.5em;
-  transition: all 0.3s;
+input[type="radio"]:checked:after {
+  margin-left: -2px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/radio-button.png");
+  background-size: contain;
+  border: 1px #fff;
 }

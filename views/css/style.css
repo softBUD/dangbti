@@ -1,6 +1,13 @@
 @charset "utf-8";
 @import "reset.css";
 @font-face {
+  font-family: "Dongle-Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108_2@1.0/Dongle-Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Cafe24Ssurround";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
     format("woff");
@@ -31,7 +38,7 @@ body {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
   background-color: #fff;
-  height: 100%;
+  min-height: 160vh;
 }
 
 /*인트로 페이지 스타일링*/
@@ -71,11 +78,16 @@ h1 .title-container .title-text {
   line-height: 1em;
   color: #fc5404;
 }
-
+.plz-down {
+  font-size: 23px;
+  font-family: "Dongle-Light";
+  position: relative;
+  top: 400px;
+}
 .intro-button {
   margin: 0 auto;
   position: relative;
-  top: 800px;
+  top: 730px;
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -99,13 +111,11 @@ h1 .title-container .title-text {
   font-size: 22px;
 }
 #scroll-top {
-  background-repeat: no-repeat;
-  background-image: url("../images/upload.png");
   width: 35px;
   height: 35px;
   background-color: #fc5404;
   position: fixed;
-  left: 90%;
+  left: 85%;
   top: 90%;
   border-radius: 100%;
   cursor: pointer;
@@ -122,7 +132,7 @@ h1 .title-container .title-text {
 /*문항 선택 페이지*/
 
 #question-form {
-  width: 333px;
+  width: 345px;
   margin: 0 auto;
 }
 
@@ -144,11 +154,11 @@ h1 .title-container .title-text {
   left: 50%;
   transform: translate(-50%);
   bottom: 18px;
-  color: #009dae;
+  color: #fc5404;
 }
 .status-bar {
   height: 6px;
-  background-color: #009dae;
+  background-color: #fc5404;
 }
 .question-box {
   width: 100%;
@@ -165,7 +175,7 @@ h1 .title-container .title-text {
   margin-bottom: 48px;
 }
 .answer-list .answer-item {
-  text-indent: -22px;
+  text-indent: -30px;
   font-size: 16px;
   line-height: 23px;
   margin: 0 0 12px 23px;
@@ -185,7 +195,7 @@ h1 .title-container .title-text {
   box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
   color: #fff;
   border-style: none;
-  background-color: #009dae;
+  background-color: #fc5404;
   font-weight: 900;
   width: 100px;
   height: 40px;
@@ -239,16 +249,15 @@ h1 .title-container .title-text {
   font-size: 36px;
   line-height: 52px;
   text-align: center;
-  color: #009dae;
+  color: #fc5404;
 }
 .result-image {
   transform: translateX(10%);
 }
 .result-image img {
-  width: 240px;
-  height: 240px;
+  width: 245px;
+  height: 245px;
   margin-bottom: 20px;
-  border-radius: 50%;
 }
 
 .result-features {
@@ -282,7 +291,7 @@ h1 .title-container .title-text {
   content: "";
   width: 6px;
   height: 6px;
-  background-color: #009dae;
+  background-color: #fc5404;
   vertical-align: 3px;
   border-radius: 50%;
   margin-right: 5px;
@@ -293,8 +302,8 @@ h1 .title-container .title-text {
   font-weight: 900;
   width: 300px;
   height: 52px;
-  color: #009dae;
-  background-color: #fff;
+  color: #fff;
+  background-color: #fc5404;
   box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
   border-style: none;
   border-radius: 7px;
